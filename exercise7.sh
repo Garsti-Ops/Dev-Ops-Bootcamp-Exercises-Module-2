@@ -27,12 +27,10 @@ cd ./package
 
 # running the app
 npm install
-nohup node server.js &
-
-sleep 10
+node server.js &
 
 # output port
-cat ./package/nohup.out | grep "listening on port"
+netstat -ltnp | grep 3000
 
 # output process id
-ps -ef | grep "node server.js"
+ps aux | grep "node server.js"

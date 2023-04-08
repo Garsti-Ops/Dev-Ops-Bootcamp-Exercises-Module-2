@@ -27,4 +27,4 @@ cd ./package
 
 # running the app
 npm install
-nohup node server.js
+nohup node server.js &

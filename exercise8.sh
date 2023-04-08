@@ -37,7 +37,7 @@ cd ./package
 
 # running the app
 npm install
-nohup node server.js &
+node server.js &
 
 # output port
 netstat -ltnp | grep 3000,

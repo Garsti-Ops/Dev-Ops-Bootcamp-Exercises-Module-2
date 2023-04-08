@@ -29,6 +29,8 @@ cd ./package
 npm install
 nohup node server.js &
 
+sleep 10
+
 # output port
 cat ./package/nohup.out | grep "listening on port"
 
